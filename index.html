@@ -574,7 +574,7 @@
       <!-- AVISO LEGAL -->
       <h2>1. Natureza e Identificação</h2>
       <p>Esta página é mantida pela iniciativa independente <strong>Jesus, Ele Te Viu.</strong>, com sede em Curitiba, Paraná, Brasil. Trata-se de um projeto de evangelismo digital sem fins lucrativos e sem filiação denominacional obrigatória. Não somos uma instituição religiosa formal, associação ou pessoa jurídica constituída, e nenhuma denominação, organização ou igreja detém controle sobre este projeto.</p>
-      <p style="margin-top:8px">Para contato: <strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="eb8884859f8a9f84ab818e989e988e878e9f8e9d829ec5888486c58999">[email&#160;protected]</a></strong> (e-mail de exemplo — substitua pelo e-mail real antes de publicar).</p>
+      <p style="margin-top:8px">Para contato: <strong><a href="mailto:juridico@jesus.eleteviu.com.br" class="__cf_email__" data-cfemail="eb8884859f8a9f84ab818e989e988e878e9f8e9d829ec5888486c58999">juridico@jesus.eleteviu.com.br</a></strong></p>
 
       <!-- TERMOS DE USO -->
       <h2>2. Termos de Uso</h2>
@@ -623,7 +623,7 @@
         <li>Revogar o consentimento a qualquer momento, sem prejuízo das comunicações já realizadas;</li>
         <li>Portabilidade dos seus dados, quando aplicável.</li>
       </ul>
-      <p style="margin-top:8px">Para exercer qualquer um desses direitos, entre em contato pelo e-mail <strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="98fbf7f6ecf9ecf7d8f2fdebedebfdf4fdecfdeef1edb6fbf7f5b6faea">[email&#160;protected]</a></strong> e responderemos em até 15 dias úteis.</p>
+      <p style="margin-top:8px">Para exercer qualquer um desses direitos, entre em contato pelo e-mail <strong><a href="mailto:juridico@jesus.eleteviu.com.br" class="__cf_email__" data-cfemail="98fbf7f6ecf9ecf7d8f2fdebedebfdf4fdecfdeef1edb6fbf7f5b6faea">juridico@jesus.eleteviu.com.br</a></strong> e responderemos em até 15 dias úteis.</p>
 
       <h2>9. Compartilhamento de Dados</h2>
       <p>Seus dados <strong>não são vendidos, alugados ou cedidos</strong> a terceiros. Podem ser compartilhados unicamente com colaboradores internos (pastores ou responsáveis pela oração) para a finalidade exclusiva descrita no item 6, todos vinculados às mesmas obrigações de confidencialidade desta política.</p>
@@ -637,11 +637,8 @@
       <h2>12. Alterações nesta Política</h2>
       <p>Podemos atualizar esta política periodicamente. A data da última atualização estará sempre indicada no início do documento. Alterações substanciais serão comunicadas por e-mail aos cadastrados.</p>
 
-      <h2>13. Autoridade Competente</h2>
-      <p>Em caso de reclamações sobre o tratamento dos seus dados, você pode contatar a Autoridade Nacional de Proteção de Dados (ANPD): <a href="https://www.gov.br/anpd" target="_blank" rel="noopener" class="text-emerald-600 underline">www.gov.br/anpd</a>.</p>
-
       <div class="mt-8">
-        <button id="closeLegalBottom" class="btn-primary" style="max-width:100%">Entendi e concordo</button>
+        <button id="closeLegalBottom" class="btn-primary" style="max-width:100%">Ok</button>
       </div>
     </div>
   </div>
@@ -793,9 +790,9 @@
           Enviando…
         </span>`;
 
-      // ── Integração real — descomente e substitua a URL:
-      /*
-      fetch('SEU_WEBHOOK_AQUI', {
+      
+      
+      fetch('https://wh.odouglasmendes.com.br/webhook/0ef878dd-8659-4d6c-8ca1-5c15045fcf67', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ nome: nome.trim(), email: email.trim(), whatsapp })
@@ -810,11 +807,11 @@
         const errDiv = document.getElementById('sendError');
         if (errDiv) errDiv.classList.remove('hidden');
       });
-      */
+      
 
       // Simulação — remova quando integrar o webhook:
-      setTimeout(() => { showSuccess(); }, 1200);
-    });
+      /*setTimeout(() => { showSuccess(); }, 1200);
+    });*/
 
     function showSuccess() {
       document.getElementById('cadastroForm').classList.add('hidden');
