@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jesus, Ele Te Viu — Um recomeço começa aqui.</title>
+
+  <!-- SEO / AEO / GEO -->
+  <meta name="description" content="Não importa o quanto você se sinta machucado ou sem esperança. Jesus Cristo pode transformar a sua vida. Dê o primeiro passo hoje." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0F172A" />
+  <meta name="format-detection" content="telephone=no,date=no,address=no,email=no" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Jesus, Ele Te Viu — Um recomeço começa aqui." />
+  <meta property="og:description" content="Seu caminho pode estar difícil e solitário. Mas você não está sozinho. Deus sempre dá segundas chances." />
+  <meta property="og:image" content="https://res.cloudinary.com/pebr96/image/upload/v1775677291/pexels-douglas-mendes-1039095939-36989187_ierzgr.jpg" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Jesus, Ele Te Viu" />
+  <meta name="twitter:description" content="Não importa o quanto você se sinta machucado. Jesus Cristo pode transformar a sua vida." />
+  <meta name="twitter:image" content="https://res.cloudinary.com/pebr96/image/upload/v1775677291/pexels-douglas-mendes-1039095939-36989187_ierzgr.jpg" />
+
+  <!-- Favicon sugerido: emoji de mão aberta / coração -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕊️</text></svg>" />
+
+  <!-- Schema.org structured data for AEO/GEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Jesus, Ele Te Viu",
+    "description": "Uma página de acolhimento espiritual para pessoas que estão passando por momentos difíceis e buscam esperança em Jesus Cristo.",
+    "inLanguage": "pt-BR",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Jesus, Ele Te Viu",
+      "description": "Iniciativa independente de evangelismo digital sem filiação denominacional obrigatória."
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root {
+      --emerald: #059669;
+      --emerald-dark: #047857;
+      --emerald-light: #D1FAE5;
+      --blue: #2563EB;
+      --blue-dark: #1D4ED8;
+      --slate-dark: #0F172A;
+      --amber-50: #FFFBEB;
+    }
+
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-handwriting { font-family: 'Kalam', cursive; }
+
+    /* Reduzir motion para acessibilidade */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    .animate-fade-in {
+      animation: fadeIn 0.5s ease-out both;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Audio player */
+    .wa-slider {
+      -webkit-appearance: none;
+      width: 100%;
+      background: transparent;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0;
+      z-index: 10;
+      cursor: pointer;
+    }
+    .wa-slider:focus { outline: 2px solid var(--blue); outline-offset: 2px; }
+    .wa-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 14px; width: 14px;
+      border-radius: 50%;
+      background: var(--blue);
+      cursor: pointer;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    }
+    .wa-slider::-webkit-slider-runnable-track { width: 100%; height: 14px; background: transparent; }
+    .wa-slider::-moz-range-thumb {
+      height: 14px; width: 14px;
+      border-radius: 50%;
+      background: var(--blue);
+      cursor: pointer;
+      border: none;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    }
+    .wa-slider::-moz-range-track { background: transparent; }
+
+    /* Step 2 */
+    .step2-hero {
+      background: linear-gradient(to bottom, #ffffff 0%, #F0FDF4 100%);
+    }
+
+    .welcome-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--emerald);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .prayer-card {
+      background: #fff;
+      border: 1.5px solid #D1FAE5;
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 4px 24px rgba(5,150,105,0.08);
+    }
+
+    .prayer-card p {
+      color: #374151;
+      font-style: normal;
+      font-size: 15px;
+      line-height: 1.75;
+      font-weight: 500;
+    }
+
+    /* Form */
+    .form-card {
+      background: #fff;
+      border-radius: 24px;
+      border: 1.5px solid #E5E7EB;
+      padding: 28px 24px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    }
+
+    .input-field {
+      width: 100%;
+      border-radius: 14px;
+      border: 1.5px solid #E5E7EB;
+      background: #F9FAFB;
+      padding: 14px 18px;
+      font-size: 16px;
+      color: #111827;
+      outline: none;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 500;
+      transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+      -webkit-appearance: none;
+    }
+    .input-field::placeholder { color: #9CA3AF; }
+    .input-field:focus {
+      border-color: var(--emerald);
+      background: #fff;
+      box-shadow: 0 0 0 4px rgba(5,150,105,0.1);
+    }
+    .input-field.error { border-color: #EF4444; }
+
+    .btn-primary {
+      width: 100%;
+      background: var(--emerald);
+      color: #fff;
+      font-weight: 800;
+      font-size: 15px;
+      padding: 18px 24px;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+      box-shadow: 0 8px 24px rgba(5,150,105,0.28);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .btn-primary:hover { background: var(--emerald-dark); box-shadow: 0 12px 32px rgba(5,150,105,0.35); }
+    .btn-primary:active { transform: scale(0.98); }
+    .btn-primary:focus { outline: 3px solid #6EE7B7; outline-offset: 3px; }
+    .btn-primary:disabled { opacity: 0.65; cursor: not-allowed; transform: none; }
+
+    .btn-blue {
+      width: 100%;
+      background: var(--blue);
+      color: #fff;
+      font-weight: 800;
+      font-size: 15px;
+      padding: 20px 24px;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+      box-shadow: 0 8px 24px rgba(37,99,235,0.28);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .btn-blue:hover { background: var(--blue-dark); box-shadow: 0 12px 32px rgba(37,99,235,0.35); }
+    .btn-blue:active { transform: scale(0.98); }
+    .btn-blue:focus { outline: 3px solid #93C5FD; outline-offset: 3px; }
+
+    /* Divider de benefícios */
+    .benefit-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 14px 0;
+      border-bottom: 1px solid #F3F4F6;
+    }
+    .benefit-row:last-child { border-bottom: none; padding-bottom: 0; }
+    .benefit-icon {
+      flex-shrink: 0;
+      width: 40px; height: 40px;
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .benefit-icon img { width: 22px; height: 22px; display: block; }
+    .benefit-icon.green { background: #D1FAE5; }
+    .benefit-icon.blue  { background: #DBEAFE; }
+
+    /* Modal */
+    .modal-overlay {
+      position: fixed; inset: 0;
+      background: rgba(15,23,42,0.7);
+      z-index: 100;
+      display: flex; align-items: flex-end; justify-content: center;
+      padding: 0;
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    .modal-overlay.open { opacity: 1; pointer-events: all; }
+    .modal-box {
+      background: #fff;
+      width: 100%; max-width: 720px;
+      border-radius: 24px 24px 0 0;
+      max-height: 85vh;
+      overflow-y: auto;
+      transform: translateY(100%);
+      transition: transform 0.35s cubic-bezier(0.32, 0.72, 0, 1);
+      padding: 32px 24px 48px;
+    }
+    .modal-overlay.open .modal-box { transform: translateY(0); }
+
+    .modal-handle {
+      width: 40px; height: 4px;
+      background: #E5E7EB;
+      border-radius: 2px;
+      margin: 0 auto 24px;
+    }
+
+    /* Legal page sections */
+    .legal-section h2 {
+      font-size: 17px; font-weight: 800; color: #111827;
+      margin-top: 28px; margin-bottom: 8px;
+    }
+    .legal-section p, .legal-section li {
+      font-size: 14px; color: #4B5563; line-height: 1.7;
+    }
+    .legal-section ul { list-style: disc; padding-left: 20px; margin-top: 6px; }
+    .legal-section li { margin-bottom: 4px; }
+
+    /* Scroll suave */
+    html { scroll-behavior: smooth; }
+
+    /* Imagem sem layout shift */
+    .hero-img { display: block; width: 100%; aspect-ratio: 16/9; object-fit: cover; }
+    @media (min-width: 768px) { .hero-img { aspect-ratio: 21/9; } }
+
+    /* Imagem mãos — sem layout shift */
+    .hands-img { display: block; width: 100%; max-width: 320px; height: 320px; object-fit: cover; border-radius: 16px; }
+
+    /* Audio player — nunca ultrapassa o padding lateral */
+    .audio-player-wrap { width: 100%; max-width: 320px; box-sizing: border-box; }
+
+    /* Oração card — não bold+italic junto */
+    .prayer-text { font-style: italic; font-weight: 600; font-size: 16px; line-height: 1.8; color: #1e3a5f; }
+
+    /* Focus trap visible outline para leitores de tela */
+    .modal-box:focus { outline: none; }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body class="bg-white md:bg-gray-100 text-gray-800 antialiased min-h-screen flex flex-col" style="opacity:0;transition:opacity 0.4s ease">
+
+  <!-- NAV -->
+  <nav class="sticky top-0 z-50 shadow-md" style="background:#0F172A">
+    <div class="max-w-[720px] mx-auto px-4 py-4 flex justify-center md:justify-start items-center">
+      <div class="text-white font-bold text-xl tracking-tight">
+        <span class="text-blue-400">Jesus,</span> Ele Te Viu.
+      </div>
+    </div>
+  </nav>
+
+  <main class="w-full max-w-[720px] mx-auto md:my-10 bg-white md:rounded-[2rem] md:shadow-2xl overflow-hidden flex-grow">
+
+    <!-- ═══════════════════════════════════════════
+         PASSO 1
+    ═══════════════════════════════════════════ -->
+    <div id="passo1" class="animate-fade-in">
+      <img
+        src="https://res.cloudinary.com/pebr96/image/upload/v1775677291/pexels-douglas-mendes-1039095939-36989187_ierzgr.jpg"
+        alt="Pessoa sentada sozinha ao pôr do sol, olhando para o horizonte"
+        class="hero-img"
+        width="720" height="405"
+        loading="eager"
+      />
+
+      <div class="px-6 pt-8 pb-16 md:px-12 md:py-12">
+        <h1 class="text-[22px] md:text-3xl font-extrabold mb-6 leading-tight text-gray-900 tracking-tight">
+          Não importa o quanto você se sinta machucado ou sem esperança, Jesus Cristo pode transformar a sua vida.
+        </h1>
+
+        <!-- Audio player -->
+        <div class="audio-player-wrap bg-[#F0F2F5] rounded-tr-2xl rounded-bl-2xl rounded-br-2xl rounded-tl-sm p-3 pr-4 flex items-center gap-3 shadow-sm mb-8 border border-gray-100">
+          <audio id="customAudio" src="assets/jesusteviu.mp3" preload="metadata"></audio>
+
+          <button id="playPauseBtn" class="text-[#8696A0] hover:text-[#2563EB] w-9 h-9 flex items-center justify-center flex-shrink-0 transition-colors focus:outline-none rounded-full" aria-label="Reproduzir áudio">
+            <svg id="playIcon" class="w-8 h-8 ml-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            <svg id="pauseIcon" class="w-8 h-8 hidden" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+          </button>
+
+          <div class="flex-grow flex flex-col justify-center relative h-10 w-full">
+            <div id="waveform" class="flex items-center gap-[2px] w-full h-7 absolute top-1/2 -translate-y-1/2 left-0 pointer-events-none"></div>
+            <input type="range" id="audioProgress" value="0" min="0" max="100" class="wa-slider w-full" aria-label="Progresso do áudio">
+            <div class="flex justify-between items-center w-full absolute -bottom-[6px] pointer-events-none text-[11px] text-[#8696A0] font-medium">
+              <span id="audioTime">0:00</span>
+              <span id="audioDuration">–:––</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Body copy -->
+        <div class="space-y-5 text-[16px] leading-relaxed text-gray-700 font-medium">
+          <p>Seu caminho pode estar mais difícil e solitário do que você imaginava — mas saiba que você não está sozinho.</p>
+          <p>O seu passado não define o seu futuro. Deus sempre dá segundas chances.</p>
+          <p>E mesmo que as pessoas virem as costas, Deus nunca vai te abandonar. Ele tem um plano para a sua vida.</p>
+
+          <h2 class="text-lg md:text-xl font-bold text-gray-900 pt-4">O problema é que todos nós erramos, e são esses erros que nos afastam de Deus.</h2>
+          <p class="italic text-gray-500 font-semibold">"…pois todos pecaram e estão separados da glória de Deus." <span class="text-sm font-medium text-gray-400 not-italic">(Romanos 3:23)</span></p>
+          <p class="italic text-gray-500 font-semibold">"O salário do pecado é a morte…" <span class="text-sm font-medium text-gray-400 not-italic">(Romanos 6:23)</span></p>
+
+          <h2 class="text-lg md:text-xl font-bold text-gray-900 pt-4">Mas a boa notícia é que Deus abriu um caminho.</h2>
+          <p>Ele enviou o Seu Filho, Jesus Cristo, para morrer no nosso lugar.</p>
+          <p>Jesus viveu sem cometer nenhum pecado e morreu na cruz para pagar a nossa dívida.</p>
+          <p class="italic text-gray-500 font-semibold">"Mas Deus prova o seu grande amor por nós nisto: Cristo morreu em nosso lugar quando ainda éramos pecadores." <span class="text-sm font-medium text-gray-400 not-italic">(Romanos 5:8)</span></p>
+          <p>Jesus ressuscitou e agora vive. Ele nos oferece um presente: a vida eterna. Podemos viver para sempre com Ele se O aceitarmos como nosso Salvador.</p>
+
+          <h2 class="text-lg md:text-xl font-bold text-gray-900 pt-4">Jesus nos convida a fazer parte da família dEle.</h2>
+          <p class="italic text-gray-500 font-semibold">"Mas, a todos que O receberam e creram em seu nome, Ele deu o direito de se tornarem filhos de Deus." <span class="text-sm font-medium text-gray-400 not-italic">(João 1:12)</span></p>
+          <p>Você pode pedir para Jesus perdoar seus erros e entrar na sua vida. Se deseja aceitar Jesus e ter um recomeço, faça esta oração com sinceridade:</p>
+
+          <div class="bg-blue-50 border border-blue-100 rounded-2xl p-5 mt-2">
+            <p class="prayer-text">
+              "Senhor Jesus, eu acredito que Você é o Filho de Deus. Confesso que Você morreu pelos meus erros e ressuscitou para me dar uma nova vida. Por favor, perdoe os meus pecados e me dê o presente da vida eterna. Te convido a entrar no meu coração e ser o meu Salvador. Quero Te seguir para sempre. Amém."
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-12 mb-4">
+          <button id="btnPasso2" class="btn-blue" aria-label="Avançar para o próximo passo">
+            Clique aqui se você fez esta oração
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         PASSO 2  —  REFATORADO
+    ═══════════════════════════════════════════ -->
+    <div id="passo2" class="hidden animate-fade-in step2-hero">
+
+      <img
+        src="https://res.cloudinary.com/pebr96/image/upload/v1775677291/pexels-douglas-mendes-1039095939-36989186_c1ucyv.jpg"
+        alt="Família reunida ao redor de uma mesa, celebrando juntos"
+        class="hero-img"
+        width="720" height="405"
+        loading="lazy"
+      />
+
+      <div class="px-6 py-10 md:px-12 md:py-12 space-y-8">
+
+        <!-- Badge de boas-vindas -->
+        <div>
+          <div class="welcome-badge mb-5">
+            <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 011.414-1.414L8.414 12.172l7.879-7.879a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Decisão tomada
+          </div>
+          <h1 class="text-[26px] md:text-[32px] font-extrabold text-gray-900 leading-tight tracking-tight">
+            Bem-vindo à família de Cristo.
+          </h1>
+          <p class="mt-3 text-[17px] font-semibold text-emerald-700">Isso é só o começo de uma história nova.</p>
+        </div>
+
+        <!-- Copy de acolhimento -->
+        <div class="space-y-4 text-[16px] leading-relaxed text-gray-700 font-medium">
+          <p>Sabemos disso porque também fizemos essa escolha — e já vimos o quanto ela transforma tudo. Não existe nada como confiar em Jesus Cristo para perdoar os seus erros, te dar paz com Deus e guiar cada passo da sua vida.</p>
+          <p>Você não entrou numa religião. Você começou um relacionamento com Aquele que te ama com um amor infinito e sem condições.</p>
+          <p>Sabemos que às vezes a vida pesa — e que nem sempre temos as pessoas certas ao redor. Queremos ser uma presença diferente: alguém que vai caminhar com você, te ouvir e te mostrar que essa fé funciona no dia a dia.</p>
+        </div>
+
+        <!-- Oração / card de oração -->
+        <div class="prayer-card">
+          <div class="flex items-center gap-3 mb-4">
+            <!-- SUBSTITUIR: emoji 🙏 pela imagem Apple emoji -->
+            <img src="APPLE_EMOJI_PRAYING_HANDS.png" alt="" aria-hidden="true" width="28" height="28" style="width:28px;height:28px;flex-shrink:0" />
+            <p class="font-extrabold text-gray-900 text-[15px] uppercase tracking-wide">Alguém vai orar por você</p>
+          </div>
+          <p class="text-gray-600 text-[15px] leading-relaxed font-medium">
+            Quando você deixar seu WhatsApp, um de nós vai separar um momento para orar pelo seu nome. Você vai receber uma mensagem simples avisando que a oração foi feita — só isso. Sem compromisso, sem cobrança, sem surpresa.
+          </p>
+        </div>
+
+        <!-- O que você vai receber — benefícios -->
+        <div>
+          <p class="text-[13px] font-bold text-gray-400 uppercase tracking-widest mb-4">O que acontece depois:</p>
+
+          <div class="benefit-row">
+            <div class="benefit-icon green" aria-hidden="true">
+              <!-- SUBSTITUIR: emoji 🙏 pela imagem Apple emoji -->
+              <img src="APPLE_EMOJI_PRAYING_HANDS.png" alt="" width="22" height="22" />
+            </div>
+            <div>
+              <p class="font-bold text-gray-900 text-[15px]">Uma oração pelo seu nome</p>
+              <p class="text-gray-500 text-[14px] mt-0.5">Você recebe uma mensagem no WhatsApp avisando quando a oração for feita. Só isso.</p>
+            </div>
+          </div>
+
+          <div class="benefit-row">
+            <div class="benefit-icon blue" aria-hidden="true">
+              <!-- SUBSTITUIR: emoji 📖 pela imagem Apple emoji -->
+              <img src="APPLE_EMOJI_OPEN_BOOK.png" alt="" width="22" height="22" />
+            </div>
+            <div>
+              <p class="font-bold text-gray-900 text-[15px]">Devocionais no e-mail</p>
+              <p class="text-gray-500 text-[14px] mt-0.5">Textos simples para te ajudar a entender a Bíblia, aprender a orar e crescer no dia a dia.</p>
+            </div>
+          </div>
+
+          <div class="benefit-row">
+            <div class="benefit-icon green" aria-hidden="true">
+              <!-- SUBSTITUIR: emoji 🎵 pela imagem Apple emoji -->
+              <img src="APPLE_EMOJI_MUSICAL_NOTE.png" alt="" width="22" height="22" />
+            </div>
+            <div>
+              <p class="font-bold text-gray-900 text-[15px]">Uma playlist para a jornada</p>
+              <p class="text-gray-500 text-[14px] mt-0.5">Músicas que falam direto com a alma, para os dias bons e para os difíceis.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FORMULÁRIO -->
+        <div class="form-card" id="formSection">
+          <p class="font-extrabold text-gray-900 text-[17px] mb-1">Deixa seu contato</p>
+          <p class="text-gray-500 text-[14px] mb-6 leading-relaxed">Seus dados ficam só com a gente. Nada de spam, nada de venda. Só cuidado.</p>
+
+          <form id="cadastroForm" novalidate class="space-y-4">
+            <div>
+              <label for="nome" class="block text-gray-700 text-sm font-bold mb-1.5">Seu nome</label>
+              <input type="text" id="nome" name="nome" required placeholder="Como você se chama?" class="input-field" autocomplete="given-name" />
+              <p id="nomeError" class="text-red-500 text-xs mt-1 hidden" role="alert">Por favor, insira seu nome.</p>
+            </div>
+
+            <div>
+              <label for="whatsapp" class="block text-gray-700 text-sm font-bold mb-1.5">WhatsApp <span class="font-normal text-gray-400">(para avisar quando orarmos)</span></label>
+              <input type="tel" id="whatsapp" name="whatsapp" required placeholder="(DDD) 90000-0000" class="input-field" autocomplete="tel" inputmode="numeric" />
+              <p id="whatsappError" class="text-red-500 text-xs mt-1 hidden" role="alert">Número inválido. Formato esperado: (11) 90000-0000</p>
+            </div>
+
+            <div>
+              <label for="email" class="block text-gray-700 text-sm font-bold mb-1.5">E-mail <span class="font-normal text-gray-400">(para os devocionais)</span></label>
+              <input type="email" id="email" name="email" required placeholder="exemplo@email.com" class="input-field" autocomplete="email" inputmode="email" />
+              <p id="emailError" class="text-red-500 text-xs mt-1 hidden" role="alert">Por favor, insira um e-mail válido.</p>
+            </div>
+
+            <!-- LGPD consent -->
+            <label class="flex items-start gap-3 cursor-pointer group mt-2">
+              <input type="checkbox" id="lgpdConsent" name="lgpd" required class="mt-0.5 w-5 h-5 flex-shrink-0 accent-emerald-600 cursor-pointer rounded" />
+              <span class="text-[13px] text-gray-500 leading-relaxed">
+                Concordo com a
+                <button type="button" id="openLegal" class="text-emerald-600 underline font-semibold hover:text-emerald-800 transition-colors">Política de Privacidade</button>
+                e autorizo o recebimento de conteúdos por e-mail e, eventualmente, mensagens no WhatsApp relacionadas à minha decisão de fé.
+              </span>
+            </label>
+            <p id="lgpdError" class="text-red-500 text-xs -mt-2 hidden" role="alert">É necessário concordar para continuar.</p>
+
+            <button type="submit" id="submitBtn" class="btn-primary mt-2">
+              Quero fazer parte
+            </button>
+
+            <div id="sendError" class="hidden mt-3 bg-red-50 border border-red-200 rounded-xl p-3 text-center">
+              <p class="text-red-700 text-[13px] font-semibold">Algo deu errado. Por favor, tente novamente.</p>
+            </div>
+          </form>
+
+          <div id="formSuccess" class="hidden mt-6 bg-emerald-50 border border-emerald-200 rounded-2xl p-5 text-center">
+            <!-- SUBSTITUIR: emoji ✅ pela imagem Apple emoji -->
+            <img src="APPLE_EMOJI_CHECK_MARK.png" alt="" aria-hidden="true" width="40" height="40" class="mx-auto mb-3" />
+            <p class="font-extrabold text-emerald-800 text-[16px]">Recebemos tudo!</p>
+            <p class="text-emerald-700 text-[14px] mt-1 leading-relaxed">Vamos orar por você com muito carinho. Fique de olho no seu WhatsApp — avisaremos quando acontecer.</p>
+          </div>
+        </div>
+
+        <!-- Imagem de encerramento -->
+        <div class="pt-2 pb-4 flex justify-center">
+          <img
+            src="https://res.cloudinary.com/pebr96/image/upload/v1775680244/pexels-douglas-mendes-1039095939-36989607_qmgykg.jpg"
+            alt="Mãos erguidas em gratidão e louvor"
+            class="hands-img shadow-md"
+            width="320" height="320"
+            loading="lazy"
+          />
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer style="background:#0F172A" class="text-gray-400 text-xs text-center py-10 w-full mt-auto">
+    <div class="max-w-[720px] mx-auto px-6">
+      <p>© 2026 Jesus, Ele Te Viu. — Iniciativa independente de evangelismo digital.</p>
+      <button id="openLegalFooter" class="underline mt-2 block mb-8 mx-auto hover:text-white transition-colors text-xs">
+        Política de Privacidade, Termos de Uso e Aviso Legal
+      </button>
+      <div class="flex justify-center space-x-8 text-gray-400">
+        <a href="#" class="hover:text-blue-400 transition-colors" aria-label="Facebook">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.326v21.348C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.894-4.788 4.66-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.794.715-1.794 1.763v2.31h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.326V1.326C24 .593 23.407 0 22.675 0z"/></svg>
+        </a>
+        <a href="#" class="hover:text-blue-400 transition-colors" aria-label="Twitter / X">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+        </a>
+        <a href="#" class="hover:text-pink-400 transition-colors" aria-label="Instagram">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       MODAL — POLÍTICA LEGAL (LGPD compliant)
+  ═══════════════════════════════════════════ -->
+  <div id="legalModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="legalModalTitle">
+    <div class="modal-box legal-section">
+      <div class="modal-handle"></div>
+      <div class="flex items-center justify-between mb-4">
+        <h1 id="legalModalTitle" class="text-[20px] font-extrabold text-gray-900">Aviso Legal, Termos de Uso e Política de Privacidade</h1>
+        <button id="closeLegal" class="text-gray-400 hover:text-gray-700 transition-colors p-1 -mr-1 rounded-full focus:outline-none focus:ring-2 focus:ring-emerald-500" aria-label="Fechar">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <p style="font-size:12px;color:#9CA3AF" class="mb-2">Última atualização: abril de 2026</p>
+
+      <!-- AVISO LEGAL -->
+      <h2>1. Natureza e Identificação</h2>
+      <p>Esta página é mantida pela iniciativa independente <strong>Jesus, Ele Te Viu.</strong>, com sede em Curitiba, Paraná, Brasil. Trata-se de um projeto de evangelismo digital sem fins lucrativos e sem filiação denominacional obrigatória. Não somos uma instituição religiosa formal, associação ou pessoa jurídica constituída, e nenhuma denominação, organização ou igreja detém controle sobre este projeto.</p>
+      <p style="margin-top:8px">Para contato: <strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="eb8884859f8a9f84ab818e989e988e878e9f8e9d829ec5888486c58999">[email&#160;protected]</a></strong> (e-mail de exemplo — substitua pelo e-mail real antes de publicar).</p>
+
+      <!-- TERMOS DE USO -->
+      <h2>2. Termos de Uso</h2>
+      <p>Ao acessar esta página e/ou preencher o formulário de contato, você declara:</p>
+      <ul>
+        <li>Ter 13 anos ou mais de idade (ou contar com autorização de responsável legal caso seja menor);</li>
+        <li>Estar fornecendo dados verdadeiros e de sua própria titularidade;</li>
+        <li>Compreender que o conteúdo desta página é de natureza espiritual e informativa, não constituindo aconselhamento médico, psicológico, jurídico ou financeiro;</li>
+        <li>Compreender que a participação é voluntária e que não existe qualquer obrigação de afiliação religiosa, denominacional ou financeira.</li>
+      </ul>
+
+      <h2>3. Isenção de Responsabilidade</h2>
+      <p>O conteúdo desta página reflete crenças cristãs de caráter geral e tem finalidade exclusivamente espiritual e de acolhimento. Não nos responsabilizamos por decisões pessoais tomadas com base no conteúdo aqui publicado. Em situações de crise emocional ou de saúde, recomendamos buscar ajuda profissional especializada (CVV: 188, disponível 24h).</p>
+
+      <!-- POLÍTICA DE PRIVACIDADE -->
+      <h2>4. Política de Privacidade — LGPD (Lei nº 13.709/2018)</h2>
+      <p>Esta política descreve como coletamos, usamos e protegemos seus dados pessoais, em conformidade com a Lei Geral de Proteção de Dados Pessoais (LGPD).</p>
+
+      <h2>5. Dados Coletados</h2>
+      <p>Coletamos exclusivamente os seguintes dados, fornecidos voluntariamente por você:</p>
+      <ul>
+        <li><strong>Nome</strong> — para personalização das comunicações;</li>
+        <li><strong>Número de WhatsApp</strong> — para envio de uma única mensagem avisando que uma oração foi realizada pelo seu nome;</li>
+        <li><strong>Endereço de e-mail</strong> — para envio de conteúdos devocionais, orientações sobre leitura bíblica, oração e playlist musical.</li>
+      </ul>
+      <p style="margin-top:8px">Não coletamos dados sensíveis além dos acima, não utilizamos cookies de rastreamento de terceiros para fins publicitários e não compartilhamos seus dados com empresas de marketing externas.</p>
+
+      <h2>6. Finalidade e Base Legal do Tratamento</h2>
+      <ul>
+        <li><strong>Consentimento (Art. 7º, I da LGPD):</strong> Todo tratamento de dados é baseado no consentimento livre, informado e inequívoco dado por você ao marcar a caixa de aceite e submeter o formulário.</li>
+        <li><strong>Finalidade do WhatsApp:</strong> exclusivamente comunicar o momento de oração realizada. Mensagens futuras relacionadas à jornada de fé (convites para conversar com um pastor, eventos comunitários) só serão enviadas mediante novo consentimento expresso.</li>
+        <li><strong>Finalidade do e-mail:</strong> envio de devocionais, orientações espirituais e playlist. Você pode cancelar a qualquer momento clicando em "Descadastrar" no rodapé de qualquer e-mail recebido.</li>
+      </ul>
+
+      <h2>7. Armazenamento e Segurança</h2>
+      <p>Seus dados são armazenados em servidores com proteção por autenticação e criptografia. Adotamos medidas técnicas e administrativas adequadas para proteger suas informações contra acesso não autorizado, perda ou destruição.</p>
+      <p style="margin-top:8px">Os dados serão retidos pelo período necessário para cumprimento das finalidades descritas ou até que você solicite sua exclusão.</p>
+
+      <h2>8. Seus Direitos como Titular (Art. 18 da LGPD)</h2>
+      <p>Você tem direito a:</p>
+      <ul>
+        <li>Confirmar a existência de tratamento dos seus dados;</li>
+        <li>Acessar os dados que temos sobre você;</li>
+        <li>Corrigir dados incompletos, inexatos ou desatualizados;</li>
+        <li>Solicitar a anonimização, bloqueio ou eliminação dos seus dados;</li>
+        <li>Revogar o consentimento a qualquer momento, sem prejuízo das comunicações já realizadas;</li>
+        <li>Portabilidade dos seus dados, quando aplicável.</li>
+      </ul>
+      <p style="margin-top:8px">Para exercer qualquer um desses direitos, entre em contato pelo e-mail <strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="98fbf7f6ecf9ecf7d8f2fdebedebfdf4fdecfdeef1edb6fbf7f5b6faea">[email&#160;protected]</a></strong> e responderemos em até 15 dias úteis.</p>
+
+      <h2>9. Compartilhamento de Dados</h2>
+      <p>Seus dados <strong>não são vendidos, alugados ou cedidos</strong> a terceiros. Podem ser compartilhados unicamente com colaboradores internos (pastores ou responsáveis pela oração) para a finalidade exclusiva descrita no item 6, todos vinculados às mesmas obrigações de confidencialidade desta política.</p>
+
+      <h2>10. Cookies e Rastreamento</h2>
+      <p>Esta página pode utilizar cookies funcionais essenciais para seu funcionamento. Não utilizamos cookies de rastreamento publicitário de terceiros (como Meta Pixel ou Google Ads) nesta versão da página. Caso isso mude, esta política será atualizada e um novo consentimento será solicitado.</p>
+
+      <h2>11. Menores de Idade</h2>
+      <p>Não coletamos intencionalmente dados de crianças menores de 13 anos sem autorização do responsável legal. Se você é responsável por uma criança e acredita que seus dados foram coletados sem consentimento, entre em contato para que possamos removê-los imediatamente.</p>
+
+      <h2>12. Alterações nesta Política</h2>
+      <p>Podemos atualizar esta política periodicamente. A data da última atualização estará sempre indicada no início do documento. Alterações substanciais serão comunicadas por e-mail aos cadastrados.</p>
+
+      <h2>13. Autoridade Competente</h2>
+      <p>Em caso de reclamações sobre o tratamento dos seus dados, você pode contatar a Autoridade Nacional de Proteção de Dados (ANPD): <a href="https://www.gov.br/anpd" target="_blank" rel="noopener" class="text-emerald-600 underline">www.gov.br/anpd</a>.</p>
+
+      <div class="mt-8">
+        <button id="closeLegalBottom" class="btn-primary" style="max-width:100%">Entendi e concordo</button>
+      </div>
+    </div>
+  </div>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    // ─── Fade-in de página ───────────────────────────────
+    window.addEventListener('DOMContentLoaded', () => {
+      document.body.style.opacity = '1';
+    });
+
+    // ─── Audio Player ────────────────────────────────────
+    const audio = document.getElementById('customAudio');
+    const playPauseBtn = document.getElementById('playPauseBtn');
+    const playIcon = document.getElementById('playIcon');
+    const pauseIcon = document.getElementById('pauseIcon');
+    const progressBar = document.getElementById('audioProgress');
+    const timeDisplay = document.getElementById('audioTime');
+    const durationDisplay = document.getElementById('audioDuration');
+    const waveformContainer = document.getElementById('waveform');
+
+    const heights = [30,45,70,40,85,100,60,40,30,50,80,95,60,30,50,75,40,30,60,90,100,70,40,50,80,95,60,30,50,75,40,30,60,45,30];
+    const bars = [];
+    heights.forEach(h => {
+      const bar = document.createElement('div');
+      bar.className = 'flex-1 rounded-full transition-colors duration-75';
+      bar.style.cssText = `height:${h}%;background:#B0B9C0`;
+      waveformContainer.appendChild(bar);
+      bars.push(bar);
+    });
+
+    function fmt(s) {
+      if (isNaN(s)) return '–:––';
+      return `${Math.floor(s/60)}:${String(Math.floor(s%60)).padStart(2,'0')}`;
+    }
+
+    playPauseBtn.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play().catch(()=>{});
+      } else {
+        audio.pause();
+      }
+    });
+
+    audio.addEventListener('play', () => {
+      playIcon.classList.add('hidden');
+      pauseIcon.classList.remove('hidden');
+      playPauseBtn.setAttribute('aria-label', 'Pausar áudio');
+    });
+    audio.addEventListener('pause', () => {
+      pauseIcon.classList.add('hidden');
+      playIcon.classList.remove('hidden');
+      playPauseBtn.setAttribute('aria-label', 'Reproduzir áudio');
+    });
+
+    audio.addEventListener('timeupdate', () => {
+      const pct = (audio.currentTime / audio.duration) * 100;
+      if (!isNaN(pct)) progressBar.value = pct;
+      timeDisplay.textContent = fmt(audio.currentTime);
+      const active = Math.floor((pct/100)*bars.length);
+      bars.forEach((b,i) => b.style.background = i < active ? '#2563EB' : '#B0B9C0');
+    });
+
+    audio.addEventListener('loadedmetadata', () => {
+      durationDisplay.textContent = fmt(audio.duration);
+    });
+
+    progressBar.addEventListener('input', () => {
+      audio.currentTime = (progressBar.value/100) * audio.duration;
+    });
+
+    audio.addEventListener('error', () => {
+      playPauseBtn.disabled = true;
+      playPauseBtn.classList.add('opacity-40','cursor-not-allowed');
+      playPauseBtn.setAttribute('aria-label','Áudio indisponível');
+    });
+
+    // ─── Navegação Passo 1 → Passo 2 ────────────────────
+    document.getElementById('btnPasso2').addEventListener('click', () => {
+      if (!audio.paused) audio.pause();
+      document.getElementById('passo1').classList.add('hidden');
+      const p2 = document.getElementById('passo2');
+      p2.classList.remove('hidden');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // ─── Formatação de telefone ──────────────────────────
+    const whatsappInput = document.getElementById('whatsapp');
+    whatsappInput.addEventListener('input', e => {
+      let v = e.target.value.replace(/\D/g,'');
+      if (v.length === 0) { e.target.value = ''; return; }
+      if (v.length <= 2) e.target.value = `(${v}`;
+      else if (v.length <= 7) e.target.value = `(${v.slice(0,2)}) ${v.slice(2)}`;
+      else if (v.length <= 11) e.target.value = `(${v.slice(0,2)}) ${v.slice(2,7)}-${v.slice(7)}`;
+      else e.target.value = `(${v.slice(0,2)}) ${v.slice(2,7)}-${v.slice(7,11)}`;
+    });
+
+    // ─── Validações ──────────────────────────────────────
+    function isEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()); }
+    function isPhone(v) { return /^\(\d{2}\) \d{5}-\d{4}$/.test(v); }
+
+    function setError(id, errId, show) {
+      const el = document.getElementById(id);
+      const err = document.getElementById(errId);
+      if (show) { el.classList.add('error'); err.classList.remove('hidden'); }
+      else { el.classList.remove('error'); err.classList.add('hidden'); }
+    }
+
+    ['nome','email','whatsapp'].forEach(id => {
+      document.getElementById(id).addEventListener('blur', () => validateField(id));
+    });
+
+    function validateField(id) {
+      const v = document.getElementById(id).value;
+      if (id === 'nome')     setError('nome','nomeError', v.trim().length < 2);
+      if (id === 'email')    setError('email','emailError', !isEmail(v));
+      if (id === 'whatsapp') setError('whatsapp','whatsappError', !isPhone(v));
+    }
+
+    // ─── Envio do formulário ─────────────────────────────
+    document.getElementById('cadastroForm').addEventListener('submit', e => {
+      e.preventDefault();
+
+      const nome     = document.getElementById('nome').value;
+      const email    = document.getElementById('email').value;
+      const whatsapp = document.getElementById('whatsapp').value;
+      const lgpd     = document.getElementById('lgpdConsent').checked;
+
+      const vNome   = nome.trim().length >= 2;
+      const vEmail  = isEmail(email);
+      const vPhone  = isPhone(whatsapp);
+
+      setError('nome','nomeError', !vNome);
+      setError('email','emailError', !vEmail);
+      setError('whatsapp','whatsappError', !vPhone);
+
+      const lgpdErr = document.getElementById('lgpdError');
+      if (!lgpd) lgpdErr.classList.remove('hidden');
+      else lgpdErr.classList.add('hidden');
+
+      if (!vNome || !vEmail || !vPhone || !lgpd) return;
+
+      const btn = document.getElementById('submitBtn');
+      btn.disabled = true;
+      btn.innerHTML = `
+        <span style="display:inline-flex;align-items:center;gap:8px;justify-content:center">
+          <svg style="animation:spin 0.8s linear infinite;width:18px;height:18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke-linecap="round"/>
+          </svg>
+          Enviando…
+        </span>`;
+
+      // ── Integração real — descomente e substitua a URL:
+      /*
+      fetch('SEU_WEBHOOK_AQUI', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ nome: nome.trim(), email: email.trim(), whatsapp })
+      })
+      .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r; })
+      .then(() => { showSuccess(); })
+      .catch(err => {
+        console.error(err);
+        btn.disabled = false;
+        btn.textContent = 'Quero fazer parte';
+        // Exibe erro inline sem alert()
+        const errDiv = document.getElementById('sendError');
+        if (errDiv) errDiv.classList.remove('hidden');
+      });
+      */
+
+      // Simulação — remova quando integrar o webhook:
+      setTimeout(() => { showSuccess(); }, 1200);
+    });
+
+    function showSuccess() {
+      document.getElementById('cadastroForm').classList.add('hidden');
+      const s = document.getElementById('formSuccess');
+      s.classList.remove('hidden');
+      s.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    // ─── Modal Legal — com focus trap ────────────────────
+    const modal = document.getElementById('legalModal');
+    const FOCUSABLE = 'a[href],button:not([disabled]),input,textarea,select,[tabindex]:not([tabindex="-1"])';
+
+    function getFocusable() { return [...modal.querySelectorAll(FOCUSABLE)]; }
+
+    function openModal() {
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      const focusable = getFocusable();
+      if (focusable.length) focusable[0].focus();
+    }
+    function closeModal() {
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    // Focus trap
+    modal.addEventListener('keydown', e => {
+      if (e.key !== 'Tab') return;
+      const focusable = getFocusable();
+      const first = focusable[0], last = focusable[focusable.length - 1];
+      if (e.shiftKey) {
+        if (document.activeElement === first) { e.preventDefault(); last.focus(); }
+      } else {
+        if (document.activeElement === last) { e.preventDefault(); first.focus(); }
+      }
+    });
+
+    ['openLegal','openLegalFooter'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.addEventListener('click', e => { e.preventDefault(); openModal(); });
+    });
+
+    document.getElementById('closeLegal').addEventListener('click', closeModal);
+    document.getElementById('closeLegalBottom').addEventListener('click', () => {
+      document.getElementById('lgpdConsent').checked = true;
+      document.getElementById('lgpdError').classList.add('hidden');
+      closeModal();
+    });
+
+    modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+    });
+
+  </script>
+
+</body>
+</html>
